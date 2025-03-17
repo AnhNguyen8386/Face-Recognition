@@ -30,6 +30,8 @@ class FaceDatabase:
         img_pil = Image.fromarray(img_rgb)
         face = self.mtcnn(img_pil)
         return face
+
+
     def extract_features(self, face):
         if face is None:
             return None
